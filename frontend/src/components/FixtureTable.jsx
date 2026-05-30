@@ -4,9 +4,12 @@ import { Swords } from "lucide-react";
 function FixtureTable({ fixtures, fetchFixtures }) {
   const selectWinner = async (id, winner) => {
     try {
-      await axios.put(`http://localhost:5000/api/fixtures/winner/${id}`, {
-        winner,
-      });
+      await axios.put(
+        `https://tournament-registration-system.onrender.com/api/fixtures/winner/${id}`,
+        {
+          winner,
+        },
+      );
 
       fetchFixtures();
     } catch (error) {

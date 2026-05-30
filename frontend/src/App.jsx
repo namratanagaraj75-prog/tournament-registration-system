@@ -33,7 +33,9 @@ function App() {
 
   const fetchTeams = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/registration/all");
+      const res = await axios.get(
+        "https://tournament-registration-system.onrender.com/api/registration/all",
+      );
 
       setTeams(res.data.data);
     } catch (error) {

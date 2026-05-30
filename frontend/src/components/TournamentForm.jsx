@@ -22,7 +22,7 @@ function TournamentForm({ fetchTournaments }) {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/tournaments/create",
+        "https://tournament-registration-system.onrender.com/api/tournaments/create",
         formData,
       );
 
