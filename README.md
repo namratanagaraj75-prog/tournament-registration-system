@@ -7,7 +7,7 @@ The system allows organizers to create tournaments, register teams, manage entry
 ---
 
 ## 🚀 Live Features
-
+⚠️ Backend is hosted on Render free tier. First request may take 30–60 seconds to wake up the server.
 ### Tournament Management
 
 * Create tournaments with entry fee and schedule
